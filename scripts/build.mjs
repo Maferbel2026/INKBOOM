@@ -1,0 +1,11 @@
+import {cp,mkdir,readFile,writeFile} from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+await mkdir(path.join(root,'dist'),{recursive:true});
+await cp(path.join(root,'public'),path.join(root,'dist'),{recursive:true});
+const manifest=JSON.parse(await readFile(path.join(root,'.openai/hosting.json'),'utf8'));
+if(manifest.static?.directory!=='dist')throw new Error('Expected static dist storefront');
+await mkdir(path.join(root,'dist/.openai'),{recursive:true});
+await writeFile(path.join(root,'dist/.openai/hosting.json'),JSON.stringify(manifest,null,2)+'\n');
+console.log('Built static INKBOOM review site.');

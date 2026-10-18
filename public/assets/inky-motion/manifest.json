@@ -1,0 +1,86 @@
+[
+  {
+    "mood": "saludo",
+    "kind": "sheet",
+    "width": 640,
+    "source_bytes": 1756349,
+    "bytes": 117612
+  },
+  {
+    "mood": "saludo",
+    "kind": "poster",
+    "width": 320,
+    "source_bytes": 1290111,
+    "bytes": 29074
+  },
+  {
+    "mood": "emocionado",
+    "kind": "sheet",
+    "width": 640,
+    "source_bytes": 1933233,
+    "bytes": 150876
+  },
+  {
+    "mood": "emocionado",
+    "kind": "poster",
+    "width": 320,
+    "source_bytes": 1434958,
+    "bytes": 35424
+  },
+  {
+    "mood": "curioso",
+    "kind": "sheet",
+    "width": 640,
+    "source_bytes": 1592749,
+    "bytes": 112554
+  },
+  {
+    "mood": "curioso",
+    "kind": "poster",
+    "width": 320,
+    "source_bytes": 1230836,
+    "bytes": 28746
+  },
+  {
+    "mood": "travieso",
+    "kind": "sheet",
+    "width": 640,
+    "source_bytes": 1645296,
+    "bytes": 109096
+  },
+  {
+    "mood": "travieso",
+    "kind": "poster",
+    "width": 320,
+    "source_bytes": 1225290,
+    "bytes": 28074
+  },
+  {
+    "mood": "enfocado",
+    "kind": "sheet",
+    "width": 640,
+    "source_bytes": 1767490,
+    "bytes": 123534
+  },
+  {
+    "mood": "enfocado",
+    "kind": "poster",
+    "width": 320,
+    "source_bytes": 1414162,
+    "bytes": 33184
+  },
+  {
+    "mood": "sorprendido",
+    "kind": "sheet",
+    "width": 640,
+    "source_bytes": 1733129,
+    "bytes": 127092
+  },
+  {
+    "mood": "sorprendido",
+    "kind": "poster",
+    "width": 320,
+    "source_bytes": 1317630,
+    "bytes": 32520
+  }
+]

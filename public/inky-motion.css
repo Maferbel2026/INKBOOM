@@ -1,0 +1,19 @@
+.emotions-heading{position:relative;padding-right:155px}
+.inky-motion-toggle{position:absolute;right:0;top:0;background:var(--paper);border:2px solid var(--ink);border-radius:5px 12px 5px 5px;box-shadow:3px 3px var(--ink);font-size:13px;padding:8px 11px;color:var(--ink);cursor:pointer}
+.inky-motion-toggle[hidden]{display:none}
+.inky-motion-toggle:focus-visible{outline:3px solid var(--pink);outline-offset:5px}
+.inky-mood-stage{position:relative;width:100%;aspect-ratio:1;max-width:160px;margin:auto}
+.inky-mood-poster{width:100%;height:100%;object-fit:contain;display:block}
+.inky-mood-sprite{position:absolute;inset:0;background-repeat:no-repeat;background-size:200% 200%;display:none}
+.mood-card.is-animated .inky-mood-poster{visibility:hidden}
+.mood-card.is-animated .inky-mood-sprite{display:block}
+.mood-card figcaption{visibility:hidden}
+.mood-card.is-animated figcaption{visibility:visible}
+/* Match the approved demo cleanup; keep Enfocado's full laptop intact. */
+[data-inky-mood="emocionado"] .inky-mood-sprite[data-frame="0"],
+[data-inky-mood="emocionado"] .inky-mood-sprite[data-frame="1"]{clip-path:inset(0 0 3% 0)}
+[data-inky-mood="curioso"] .inky-mood-sprite{clip-path:inset(0 1.5% 0 0)}
+[data-inky-mood="saludo"] .inky-mood-sprite[data-frame="3"]{clip-path:polygon(0 0,100% 0,100% 100%,0 100%,0 57%,4% 57%,4% 38%,0 38%)}
+[data-inky-mood="sorprendido"] .inky-mood-sprite[data-frame="1"]{clip-path:polygon(0 0,100% 0,100% 100%,0 100%,0 82%,2.5% 82%,2.5% 52%,0 52%)}
+@media(max-width:780px){.emotions-heading{padding-right:0}.inky-motion-toggle{position:static;margin:0 0 18px}.inky-mood-stage{max-width:160px}}
+@media(prefers-reduced-motion:reduce){.mood-card .inky-mood-poster{visibility:visible}.mood-card .inky-mood-sprite{display:none}.mood-card figcaption{visibility:hidden}}

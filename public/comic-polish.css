@@ -1,0 +1,33 @@
+/* Native selects keep keyboard/mobile behavior inside illustrated control frames. */
+body select,body .catalog-filter select,body .four-step-config select,body .story-lab .choices select{
+ -webkit-appearance:none;appearance:none;box-sizing:border-box;min-width:0;width:100%;min-height:51px;
+ border:2px solid var(--ink);border-radius:4px 15px 4px 4px;box-shadow:4px 4px var(--ink);
+ background-color:var(--paper);background-image:linear-gradient(45deg,transparent 50%,#05070c 50%),linear-gradient(135deg,#05070c 50%,transparent 50%),linear-gradient(#fc448b,#fc448b);
+ background-position:calc(100% - 25px) 52%,calc(100% - 18px) 52%,right top;background-size:7px 7px,7px 7px,47px 100%;background-repeat:no-repeat;
+ padding:13px 59px 13px 14px;color:var(--ink);font:700 14px/1.4 Arial,sans-serif;cursor:pointer;transition:box-shadow .15s,transform .15s;
+}
+body select:hover{transform:translateY(-1px);box-shadow:5px 6px var(--ink)}body select:focus-visible{outline:3px solid var(--purple);outline-offset:5px}body select:disabled{opacity:.55;cursor:default}body select option{background:#fffaf6;color:#05070c;font:15px Arial,sans-serif}
+body .catalog-filter select{font-size:12px;padding:12px 39px 12px 10px;background-size:6px 6px,6px 6px,32px 100%;background-position:calc(100% - 20px) 52%,calc(100% - 14px) 52%,right top;min-height:46px}
+/* Selected story/style as a complete comic panel, with unchanged supplied artwork. */
+.four-step-config .form-style-preview{position:relative;isolation:isolate;overflow:visible;border:3px solid var(--ink);border-radius:4px 26px 4px 4px;box-shadow:7px 8px var(--ink);background-color:var(--lilac);background-image:radial-gradient(#05070c22 .9px,transparent 1.2px);background-size:7px 7px;padding:33px 26px 27px;gap:29px;margin:32px 0}
+.four-step-config .form-style-preview:before{content:'';position:absolute;inset:0;background:linear-gradient(125deg,transparent 77%,#fc448b 77%);z-index:-1;border-radius:0 22px 0 0;pointer-events:none}
+.preview-corner{position:absolute;right:16px;top:-15px;background:var(--yellow);color:var(--ink);font:italic 16px/1.2 Impact,'Arial Narrow',sans-serif;padding:6px 12px;border:2px solid var(--ink);box-shadow:3px 3px var(--ink);transform:rotate(4deg)}
+.four-step-config .form-style-preview .preview-comic-art{position:relative;padding:5px 4px 0;min-width:0}
+.four-step-config .form-style-art{border:3px solid var(--ink);box-shadow:7px 8px var(--ink);transform:rotate(-3deg)}
+.preview-comic-art figcaption{position:relative;display:block;text-align:center;background:var(--ink);color:var(--paper);font-size:8px;font-weight:800;letter-spacing:1.2px;line-height:1.5;padding:7px 5px;margin:20px -7px 0;transform:rotate(-2deg)}
+.preview-comic-copy{min-width:0}.preview-comic-copy .eyebrow{display:inline-block;background:var(--ink);color:var(--paper);padding:6px 9px;font-size:9px;letter-spacing:1px;transform:rotate(-2deg);margin-bottom:20px}.preview-comic-copy .eyebrow:before{display:none}
+.four-step-config .form-style-preview .preview-style-name{display:table;background:var(--pink);border:2px solid var(--ink);box-shadow:4px 4px var(--ink);font:italic 32px/1.15 Impact,'Arial Narrow',sans-serif;color:var(--ink);padding:6px 12px;transform:rotate(-2deg);margin:0 0 20px;overflow-wrap:anywhere}
+.four-step-config .form-style-preview .preview-story-title{font-size:19px;font-weight:800;line-height:1.35;color:var(--ink);margin:0 0 19px}
+.preview-caption{position:relative;background:var(--paper);border:2px solid var(--ink);border-radius:15px 15px 3px 15px;box-shadow:3px 3px var(--ink);padding:12px 14px;color:var(--ink);font-size:11px;line-height:1.6;margin:0}.preview-caption:after{content:'';position:absolute;left:21px;bottom:-9px;width:13px;height:13px;background:var(--paper);border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);transform:skewY(28deg)}
+/* Benefits and an editorial recommendation, without a sales-volume claim. */
+.edition-card{padding-top:22px}.edition-badge{align-self:flex-start;background:var(--yellow);color:var(--ink);font:italic 14px/1.2 Impact,'Arial Narrow',sans-serif;border:2px solid var(--ink);box-shadow:2px 2px var(--ink);padding:4px 8px;margin:0 0 5px;transform:rotate(-2deg)}
+.edition-benefit{display:block;font-size:12px;font-weight:700;line-height:1.5;color:#59435d;margin:3px 0 4px}.edition-card-copy{width:100%}
+/* The next chapter: a comic teaser for the reveal. */
+.cover-next-note{position:relative;isolation:isolate;border:3px solid var(--ink);border-radius:3px 22px 3px 3px;background:var(--lilac);background-image:radial-gradient(#05070c22 1px,transparent 1.3px);background-size:7px 7px;box-shadow:6px 7px var(--ink);padding:25px 22px 22px;margin:34px 0 25px;color:var(--ink)}
+.cover-next-note .boom-teaser-kicker{display:table;background:var(--ink);color:var(--paper);padding:5px 9px;font-size:9px;letter-spacing:1px;font-weight:800;line-height:1.4;margin:0 0 16px;transform:rotate(-2deg)}
+.cover-next-note>p{font-size:13px;color:var(--ink);margin:0 0 13px}.cover-next-note>strong{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px;line-height:1.3}.cover-next-note .boom-word{display:inline-block;background:var(--pink);color:var(--ink);border:3px solid var(--ink);box-shadow:4px 4px var(--ink);padding:7px 13px;transform:rotate(-3deg);font:italic 32px/1.1 Impact,'Arial Narrow',sans-serif}.cover-next-note .boom-next-title{font:italic 28px/1.2 Impact,'Arial Narrow',sans-serif}.cover-next-note>span:last-child{font-size:11px;line-height:1.6;background:var(--paper);border-left:3px solid var(--ink);padding:9px 11px;margin-top:18px}
+@media(max-width:600px){body .four-step-config select{font-size:13px;padding-left:12px}.four-step-config .form-style-preview{padding:31px 20px 24px;gap:27px}.preview-corner{font-size:14px;right:12px}.four-step-config .form-style-preview .preview-comic-art{width:90%;max-width:240px}.preview-comic-art figcaption{font-size:9px}.four-step-config .form-style-preview .preview-style-name{font-size:30px;margin:0 auto 20px}.four-step-config .form-style-preview .preview-story-title{font-size:19px}.preview-comic-copy .eyebrow{margin-bottom:20px}.preview-caption{text-align:left;font-size:12px}.edition-badge{font-size:15px}.edition-benefit{font-size:13px}.cover-next-note{padding:22px 16px 20px}.cover-next-note .boom-word{font-size:30px}.cover-next-note .boom-next-title{font-size:27px}.cover-next-note>strong{gap:16px}}
+@media(prefers-reduced-motion:reduce){body select{transition:none}}
+.edition-badge{position:absolute;left:18px;top:-14px;margin:0}
+@media(max-width:600px){.edition-options{gap:24px}}
+@media(max-width:600px){body .four-step-config select{font-size:16px}}
